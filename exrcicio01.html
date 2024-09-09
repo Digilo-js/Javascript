@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Verficador de Cidadao</h1>
+    Digite sua nacionalidade <input type="string" name="name" id="nome">
+    <input type="button" value="Verficar" onclick="verficando()">
+    <div id="res">Resultado</div>
+     
+    <script>         
+         function verficando(){
+                    var nom = window.document.getElementById("nome")
+                    var res = window.document.getElementById("res")
+                    var n1 = String(nom.value)
+                    
+                    if (n1 == Angola){
+                        res.innerText = "voce e Angolano"
+
+                    } else{
+                        res.innerText = "Voce e estrageiro"
+                    }
+                    res.innerHTML = n1
+                    
+                           
+         }
+         
+
+    </script>
+
+</body>
+</html>

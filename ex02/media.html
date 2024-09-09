@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:rgba(215, 84, 84, 0.685);
+            font: normal 18pt arial;
+    
+        }
+
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        
+
+        .lop{
+
+
+            height: 400px;
+            width: 400px;
+            background-color: aliceblue;
+            text-align: center;
+            padding: 10px;
+
+        }
+        #button{
+           margin: 10px 0 20px;  
+        }
+    </style>
+
+</head>
+<body>
+    <div class="lop">
+        <h3>Calculadora de Media</h3>
+        <input type="number" name="text2" id="text3">
+        <input type="number" name="text" id="text1">
+        <input type="number" name="text1" id="text2">
+        <input type="button" value="Verficar" onclick="somar()"  id="button">
+         <div id="soma">Resultado</div>
+        
+    </div>
+
+    <script>
+       
+
+        function somar(){
+            var tn3 = window.document.getElementById("text3")
+            var tn1 = window.document.getElementById("text1")
+            var tn2 = window.document.getElementById("text2")
+            var soma = window.document.getElementById("soma")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var n3 = Number(tn3.value)
+            var s = n1 + n2 + n3
+            var s = s/3
+            soma.innerHTML= s
+          
+            if (s>=10) {
+
+                soma.innerHTML += "Voce foi aprovado"
+            }else{
+
+              soma.innerHTML += "Voce foi reprovado"
+            }
+        }
+    </script>
+</body>
+</html>

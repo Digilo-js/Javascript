@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Capturar.PNG);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    width: 420px;
+    border:  2px solid grey;
+    backdrop-filter: blur(20px);
+    box-shadow:  0 0 10px rgb(0, 0, 0);
+    background-color: transparent;
+    color: aliceblue;
+    border-radius: 10px;
+    padding:  30px 40px;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-box{
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;    
+}
+.input-box input{
+    font-size: 16px;
+    color: aliceblue;
+    padding: 20px 45px 20px 20px;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    border: 2px solid gray
+    
+}
+
+.input-box input::placeholder{
+    color: aliceblue;
+}
+
+.input-box1{
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+}
+
+.relembrar{
+    display: flex;
+    justify-content:  space-between;
+    font-size: 14.5px;
+    margin:  -15px 0 15px;
+}
+
+.relembrar label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.relembrar a:hover{
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow:  0 0 10px rgb(19, 19, 19) ;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font: weight 600px; ;
+
+}
+
+.registar{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.registar p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registar p a :hover{
+    text-decoration: underline;
+
+}
